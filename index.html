@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preinscripcion</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>PREINSCRIPCION- CDI</h1>
+    <p class="titulo">El siguiente formulario es para realizar la preinscripcion del correspondiente ciclo lectivo al cdi. Al finalizar el mismo se enviará al correo electronico indicado, el comprobante que deberá presentar al momento de la inscripción presencial.</p>
+    <form action="registro.php" method="post">
+        <H3>Datos del Alumno</H3>
+        <p>A continuación complete datos del alumno:</p>
+        <label for="DNI">DNI</label><input type="text" name="DNI">
+        <br>
+        <label for="nomAlumno">Nombres</label><input type="text" name="nomAlumno"> 
+        <br>
+        <label for="apellAlumno">Apellidos</label><input type="text" name="apellAlumno">
+        <br>
+        <label for="FchNac">Fecha de Nacimiento</label><input type="date" name="FchNac">
+        <br>
+        <label for="edad">Edad</label><input type="text" name="edad">
+        <br>
+        <label for="domicilio">Domicilio</label><input type="text" name="domicilio">
+       
+        <h3>Datos del Tutor</h3>
+        <p>A continuacion completar los datos del tutor / adulto a cargo del niño/a</p>
+        <label for="NombreT">Nombres</label><input type="text" name="NombreT"> 
+        <br>
+        <label for="ApellidoT">Apellidos</label><input type="text" name="ApellidoT">
+        <br>
+        <label for="dniT">DNI</label><input type="text" name="dniT">
+        <br>
+        <label for="telefonoT">Teléfono</label><input type="tel" name="telefonoT">
+        <br>
+        <label for="correo">Email</label><input type="email" name="correo">
+        
+        <h3>CDI</h3>
+        <p>Indique el CDI que desea inscribirsde</p>
+        <p>Elija el CDI AL desea inscribirse</p>
+        <select name="numero" >
+            <option value="1">mi dulce bebé</option>
+            <option value="2">aventuras en pañales</option>
+            <option value="3">grillito saltarín</option>
+            <option value="4">mamá margarita</option>
+            <option value="5">mitai roga I</option>
+            <option value="6">niño feliz</option>
+            <option value="7">mitai roga IV</option>
+            <option value="8">mitai roga VII</option>
+        </select><br>
+        <p>Elija la Salita</p>
+        <select name="numero" >
+            <option value="1">maternal</option>
+            <option value="2">salita de 3</option>
+            <option value="3">salita de 4</option>
+            <option value="4">salita de 5</option>
+        </select><br>
+        <p>Eija el turno</p>
+        <select name="numero">
+            <option value="1">Mañana</option>
+            <option value="2">Tarde</option>
+        </select><br><br>
+        <button>ENVIAR</button><br>
+        
+
+        
+        
+    </form>
+</body>
+</html>
